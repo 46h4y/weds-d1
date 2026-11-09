@@ -18,6 +18,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://savethedate.app"),
   title: "Save The Date — Beautiful Digital Wedding Invitations",
   description:
     "Create a breathtaking digital wedding invitation in minutes. Manage RSVPs effortlessly. One beautiful link for your big day.",
