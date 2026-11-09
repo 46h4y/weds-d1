@@ -120,5 +120,67 @@ export const invites: InviteData[] = [
     ogImage: "/ashwageetham/theme_card.jpg",
     ogDescription: "Mr. Sivarajan M.M. & Mrs. Rohini Sivarajan cordially invite you with family to the wedding of Aswanth & Geethanjali on Wednesday, 11th November 2026 at The Hill District Club, Kolagapara.",
   },
+  {
+    slug: "prudhvi-mouktika-wedding-digital-invitation",
+    couple: "Prudhvi Sai & Mouktika",
+    date: "November 25, 2026",
+    venue: "Paradise Resort, Kumarakom, Kerala",
+    phone: "918848772371",
+    theme: "prudhvi-mouktika",
+    images: [
+      "/assets/prudhvisai-photo.jpg",
+      "/assets/mouktika-photo.jpg",
+      "/assets/wedding-logo.jpg",
+      "/assets/couple-first-photo.jpg"
+    ],
+    ogImage: "/assets/og-image.jpg",
+    ogDescription: "We cordially invite you to witness the beginning of our forever and celebrate the wedding ceremony of Prudhvi Sai & Mouktika on 25th November 2026.",
+  },
+  {
+    slug: "prudhviwedsmoutika",
+    couple: "Prudhvi Sai & Mouktika",
+    date: "November 25, 2026",
+    venue: "Paradise Resort, Kumarakom, Kerala",
+    phone: "918848772371",
+    theme: "prudhvi-mouktika",
+    images: [
+      "/assets/prudhvisai-photo.jpg",
+      "/assets/mouktika-photo.jpg",
+      "/assets/wedding-logo.jpg",
+      "/assets/couple-first-photo.jpg"
+    ],
+    ogImage: "/assets/og-image.jpg",
+    ogDescription: "We cordially invite you to witness the beginning of our forever and celebrate the wedding ceremony of Prudhvi Sai & Mouktika on 25th November 2026.",
+  },
+  {
+    slug: "weds-d1",
+    couple: "Yaswanth & Mrudula",
+    date: "November 19–21, 2026",
+    venue: "Lotus Spring Ranch, McKinney, TX",
+    phone: "918848772371",
+    theme: "weds-d1",
+    images: [
+      "/images/couple_festive_home.jpg",
+      "/images/couple_traditional_portrait.jpg",
+      "/images/couple_ganesha_puja.jpg",
+    ],
+    ogImage: "/images/couple_festive_home.jpg",
+    ogDescription: "Together with our families, Yaswanth & Mrudula joyfully invite you to celebrate our wedding on November 19–21, 2026 in Texas, USA.",
+  },
+  {
+    slug: "yaswanth-mrudula-wedding-digital-invitation",
+    couple: "Yaswanth & Mrudula",
+    date: "November 19–21, 2026",
+    venue: "Lotus Spring Ranch, McKinney, TX",
+    phone: "918848772371",
+    theme: "weds-d1",
+    images: [
+      "/images/couple_festive_home.jpg",
+      "/images/couple_traditional_portrait.jpg",
+      "/images/couple_ganesha_puja.jpg",
+    ],
+    ogImage: "/images/couple_festive_home.jpg",
+    ogDescription: "Together with our families, Yaswanth & Mrudula joyfully invite you to celebrate our wedding on November 19–21, 2026 in Texas, USA.",
+  },
 ];
 

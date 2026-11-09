@@ -44,41 +44,55 @@ const INVITE_CARDS = [
   },
   {
     id: 2,
+    title: "Prudhvi & Mouktika",
+    description: "Telugu Destination Celebration: Interactive gold scratch-to-reveal card, live countdown, floating butterflies & petals, Lord Ganesha invocation, and Kumarakom backwaters wedding.",
+    imageSrc: "/assets/wedding-hero-BBfn2Y6k.jpg",
+    href: "/invite/prudhviwedsmoutika",
+  },
+  {
+    id: 3,
+    title: "Yaswanth & Mrudula (Weds-D1)",
+    description: "Sacred South Indian Heritage: 3D splitting Temple Gopuram door gateway, royal confetti shower, paper-cut card, multi-event schedule with Google Calendar & RSVP.",
+    imageSrc: "/images/couple_festive_home.jpg",
+    href: "/invite/weds-d1",
+  },
+  {
+    id: 4,
     title: "Anandhu & Archana",
     description: "Kerala Traditional: Rich gold and green traditional theme featuring falling petals, video reels, and traditional music.",
     imageSrc: "/kerala_couple_1_1777897655779.png",
     href: "/invite/anandhu-archana-kerala-wedding",
   },
   {
-    id: 3,
+    id: 5,
     title: "Daniel & Maria",
     description: "Christian Elegance: Minimalist heavenly blue and white aesthetic with gentle scroll transitions.",
     imageSrc: "/sia_img/desktop-sia.png",
     href: "/invite/daniel-maria-wedding",
   },
   {
-    id: 4,
+    id: 6,
     title: "Aditya & Meera",
     description: "Royal Palace: Deep maroon and gold luxury theme with sparkling particle effects and cinematic animations.",
     imageSrc: "/hero-bg.jpg",
     href: "/invite/aditya-meera-royal-wedding",
   },
   {
-    id: 5,
+    id: 7,
     title: "Ajay & Aparna",
     description: "Ajay & Aparna Traditional: Interactive 3D envelope opening sequence, gold wax seal, and traditional background audio.",
     imageSrc: "/couple_casual.jpg",
     href: "/invite/ajay-aparna-wedding-digital-invitation",
   },
   {
-    id: 6,
+    id: 8,
     title: "Sukanya & Sreejith",
     description: "Sreejith & Sukanya Traditional: Interactive 3D envelope, gold wax seal, traditional background audio, addresses, and contacts.",
     imageSrc: "/sukanya_sreejith_couple_1.jpg",
     href: "/invite/sreejith-sukanya-wedding-digital-invitation",
   },
   {
-    id: 7,
+    id: 9,
     title: "Vishnu & Athulya",
     description: "Vishnu & Athulya Kerala Premium: Multi-panel slide envelope, gold wax seal, interactive scratch details card, dynamic floating petals, snap carousel, local guestbook, and traditional music.",
     imageSrc: "/vishnu_athulya/couple_close.jpg",
@@ -105,10 +119,36 @@ const TEMPLATES = [
     image: "/ashwageetham/theme_card.jpg",
     bgClass: "border-amber-500/40 bg-[#250810]/95",
     tagColor: "bg-amber-500/20 text-amber-200 border border-amber-500/30",
-    badge: "⭐ Featured",
+    badge: "⭐ Flagship Kerala",
     gradient: "from-[#4a0e17] via-[#66182c] to-[#4a0e17]",
     textCol: "text-[#FAF6EF]",
     subtitleCol: "text-[#FAF6EF]/80"
+  },
+  {
+    title: "Prudhvi & Mouktika Destination",
+    couple: "Prudhvi Sai & Mouktika",
+    slug: "prudhviwedsmoutika",
+    desc: "Romantic sage & cream Telugu destination suite: interactive wax envelope, gold scratch-to-reveal card, couple favourites, multi-day schedule, and live map directions.",
+    image: "/assets/wedding-hero-BBfn2Y6k.jpg",
+    bgClass: "border-rose-500/40 bg-[#1f0b14]/95",
+    tagColor: "bg-rose-500/20 text-rose-200 border border-rose-500/30",
+    badge: "⭐ Flagship Telugu",
+    gradient: "from-[#6b1e2c] via-[#852a3b] to-[#6b1e2c]",
+    textCol: "text-[#FAF6EF]",
+    subtitleCol: "text-[#FAF6EF]/80"
+  },
+  {
+    title: "Temple Gopuram Heritage (Weds-D1)",
+    couple: "Yaswanth & Mrudula",
+    slug: "weds-d1",
+    desc: "Auspicious temple architecture with 3D split-door Gopuram reveal, golden confetti, parchment paper-cut styling, multi-event RSVP, and calendar sync.",
+    image: "/images/couple_festive_home.jpg",
+    bgClass: "border-amber-600/40 bg-[#240609]/95",
+    tagColor: "bg-amber-500/20 text-amber-300 border border-amber-500/30",
+    badge: "⭐ Flagship Temple",
+    gradient: "from-[#3B0F15] via-[#2A0B0E] to-[#190507]",
+    textCol: "text-[#FFF6D8]",
+    subtitleCol: "text-[#FFCF5C]"
   },
   {
     title: "Kerala Traditional",
@@ -333,10 +373,74 @@ function TestimonialCard({ img, name, username, body, country }: typeof KERALA_T
   );
 }
 
+const FLAGSHIP_TRIO = [
+  {
+    id: "ashwageetham",
+    title: "Ashwageetham",
+    badge: "Kerala Royal Flagship",
+    icon: "mail",
+    couple: "Aswanth & Geethanjali",
+    date: "Wednesday, November 11, 2026",
+    venue: "The Hill District Club, Kolagapara, Kerala",
+    desc: "Our flagship Kerala Royal wedding invitation suite. Features an interactive 3D wax seal envelope opening, traditional chariot & elephant royal procession artwork, pencil sketch portrait, auspicious nadaswaram BGM, and instant WhatsApp RSVP.",
+    image: "/ashwageetham/theme_card.jpg",
+    path: "/invite/aswanth-geethanjali-wedding-digital-invitation",
+    accentGrad: "linear-gradient(135deg, #7C1425, #A51D36)",
+    btnShadow: "0 6px 24px rgba(124,20,37,0.5)",
+    borderClass: "border-amber-500/40",
+    bgClass: "bg-[#250810]/85",
+    badgeBg: "border-amber-400/40 bg-amber-500/15 text-amber-300",
+    pillTag: "✨ 3D Wax Seal & Royal Chariot",
+    orderText: "Hi! I love the Ashwageetham wedding invitation design. I would like to create one for my wedding.",
+    features: ["3D Embossed Wax Seal", "Royal Chariot Procession", "Continuous Nadaswaram BGM", "WhatsApp RSVP"],
+  },
+  {
+    id: "prudhvi-mouktika",
+    title: "Prudhvi & Mouktika",
+    badge: "Telugu Destination Flagship",
+    icon: "celebration",
+    couple: "Prudhvi Sai & Mouktika",
+    date: "Wednesday, November 25, 2026",
+    venue: "Paradise Resort, Kumarakom & Visakhapatnam",
+    desc: "An enchanting Telugu destination celebration suite. Includes interactive gold foil scratch-to-reveal card, celebratory confetti explosion, floating butterflies & petals, Lord Ganesha invocation, and interactive Google Maps.",
+    image: "/assets/wedding-hero-BBfn2Y6k.jpg",
+    path: "/invite/prudhviwedsmoutika",
+    accentGrad: "linear-gradient(135deg, #6b1e2c, #a82d46)",
+    btnShadow: "0 6px 24px rgba(107,30,44,0.5)",
+    borderClass: "border-rose-500/40",
+    bgClass: "bg-[#200914]/85",
+    badgeBg: "border-rose-400/40 bg-rose-500/15 text-rose-300",
+    pillTag: "✦ Scratch-To-Reveal & Live Countdown",
+    orderText: "Hi! I love the Prudhvi & Mouktika wedding invitation design. I would like to create one for my wedding.",
+    features: ["Gold Foil Scratch Card", "Floating Butterflies & Petals", "Ganesha Invocation Banner", "Interactive Google Maps"],
+  },
+  {
+    id: "weds-d1",
+    title: "Yaswanth & Mrudula",
+    badge: "Sacred Temple Gopuram Flagship",
+    icon: "temple_hindu",
+    couple: "Yaswanth & Mrudula",
+    date: "November 19–21, 2026",
+    venue: "Sahvana Ranch & Lotus Spring Ranch, Texas",
+    desc: "An authentic South Indian temple experience. The sacred unopened temple gopuram splits down the center in 3D perspective to unveil the divine wedding invitation, accompanied by golden confetti and sandalwood parchment paper-cut styling.",
+    image: "/images/couple_festive_home.jpg",
+    path: "/invite/weds-d1",
+    accentGrad: "linear-gradient(135deg, #7D5117, #C9922F)",
+    btnShadow: "0 6px 24px rgba(201,146,47,0.45)",
+    borderClass: "border-amber-600/40",
+    bgClass: "bg-[#22070b]/85",
+    badgeBg: "border-amber-500/40 bg-amber-600/15 text-amber-300",
+    pillTag: "🏛️ 3D Temple Door Reveal & Confetti",
+    orderText: "Hi! I love the Yaswanth & Mrudula temple wedding invitation design. I would like to create one for my wedding.",
+    features: ["3D Temple Door Reveal", "Gold Confetti Burst", "Parchment Paper-Cut Card", "Google Calendar & .ics Sync"],
+  },
+];
+
 export function LandingHomeMarketing() {
-  const ashwageethamPath = "/invite/aswanth-geethanjali-wedding-digital-invitation";
+  const [activeFlagshipIndex, setActiveFlagshipIndex] = useState(0);
+  const activeFlagship = FLAGSHIP_TRIO[activeFlagshipIndex];
+
   const primary = invites[0];
-  const demoPath = ashwageethamPath;
   const whatsappUrl = `https://wa.me/${primary.phone}`;
 
   return (
@@ -384,7 +488,7 @@ export function LandingHomeMarketing() {
                 </h1>
 
                 <p className="text-base leading-relaxed text-purple-100/80" style={{ maxWidth: "480px" }}>
-                  Ditch the paper and the complex builders. Create a breathtaking, AI-powered wedding website and digital invitation suite in minutes. Manage RSVPs effortlessly.
+                  Ditch the paper and complex builders. Create a breathtaking, bespoke wedding website and digital invitation suite in minutes. Explore our flagship live weddings below.
                 </p>
 
                 <div className="flex flex-wrap items-center gap-3 pt-2">
@@ -398,47 +502,73 @@ export function LandingHomeMarketing() {
                     Start for Free
                   </a>
                   <Link
-                    href={ashwageethamPath}
+                    href={activeFlagship.path}
                     className="inline-flex items-center justify-center gap-2 rounded-xl border border-amber-400/30 bg-amber-500/10 px-7 py-3.5 text-sm font-semibold text-amber-200 backdrop-blur-sm transition hover:bg-amber-500/20 shadow-md"
                   >
-                    <span className="material-symbols-outlined text-[18px] text-amber-300">mail</span>
-                    View Ashwageetham Demo
+                    <span className="material-symbols-outlined text-[18px] text-amber-300">{activeFlagship.icon}</span>
+                    View {activeFlagship.couple}
                   </Link>
                 </div>
+
+                {/* Flagship Switcher Pills */}
+                <div className="flex flex-col gap-2.5 pt-1">
+                  <p className="text-[11px] font-bold text-purple-300/80 uppercase tracking-wider flex items-center gap-1.5">
+                    <span className="material-symbols-outlined text-sm text-amber-300">verified</span>
+                    Explore Live Flagship Websites:
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {FLAGSHIP_TRIO.map((f, idx) => (
+                      <button
+                        key={f.id}
+                        type="button"
+                        onClick={() => setActiveFlagshipIndex(idx)}
+                        className={`cursor-pointer px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all flex items-center gap-1.5 ${
+                          activeFlagshipIndex === idx
+                            ? "bg-amber-400/20 text-amber-200 border border-amber-400/60 shadow-md scale-105"
+                            : "bg-white/5 text-purple-200/70 border border-white/10 hover:bg-white/10 hover:text-white"
+                        }`}
+                      >
+                        <span>{idx === 0 ? "🪔" : idx === 1 ? "🌸" : "🏛️"}</span>
+                        <span>{f.couple}</span>
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
                 <p className="text-xs text-purple-300/60">No credit card required. Setup takes 5 minutes.</p>
               </div>
 
-              {/* Right — phone mockup showcasing Ashwageetham */}
+              {/* Right — phone mockup showcasing Active Flagship */}
               <div className="relative mx-auto flex w-full max-w-[320px] justify-center lg:mx-0 lg:max-w-none lg:justify-end">
                 {/* Floating badge top-left */}
                 <div
-                  className="absolute top-10 -left-4 z-20 flex items-center gap-2.5 rounded-xl border border-amber-500/30 bg-[#250810]/85 p-3 shadow-xl backdrop-blur-md sm:-left-8"
+                  className="absolute top-10 -left-4 z-20 flex items-center gap-2.5 rounded-xl border border-amber-500/30 bg-[#250810]/90 p-3 shadow-xl backdrop-blur-md sm:-left-8"
                   style={{ animation: "floatY 4s ease-in-out infinite" }}
                 >
                   <div className="flex h-8 w-8 items-center justify-center rounded-full bg-amber-500/30">
-                    <span className="material-symbols-outlined text-[18px] text-amber-200">mail</span>
+                    <span className="material-symbols-outlined text-[18px] text-amber-200">{activeFlagship.icon}</span>
                   </div>
                   <div>
-                    <p className="text-xs font-semibold text-white">Ashwageetham</p>
-                    <p className="text-[10px] text-amber-200/80">Aswanth &amp; Geethanjali</p>
+                    <p className="text-xs font-semibold text-white">{activeFlagship.title}</p>
+                    <p className="text-[10px] text-amber-200/80">{activeFlagship.couple}</p>
                   </div>
                 </div>
 
                 {/* Phone */}
                 <Link
-                  href={ashwageethamPath}
+                  href={activeFlagship.path}
                   className="group relative h-[500px] w-[248px] overflow-hidden rounded-[34px] border-[6px] border-amber-500/30 bg-slate-900 shadow-2xl sm:h-[540px] sm:w-[268px] block cursor-pointer"
                   style={{ transform: "perspective(1200px) rotateY(-8deg) rotateX(4deg)", transition: "transform 0.5s ease" }}
-                  title="Click to view Aswanth & Geethanjali Live Invite"
+                  title={`Click to view ${activeFlagship.couple} Live Invite`}
                 >
-                  <Image src="/ashwageetham/theme_card.jpg" alt="Aswanth & Geethanjali wedding invitation preview" fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="300px" priority unoptimized />
+                  <Image src={activeFlagship.image} alt={`${activeFlagship.couple} wedding invitation preview`} fill className="object-cover group-hover:scale-105 transition-transform duration-700" sizes="300px" priority unoptimized />
                   {/* Bottom bar */}
                   <div className="absolute bottom-5 left-3 right-3 flex items-center justify-between rounded-xl border border-amber-400/40 bg-white/95 p-3 shadow-lg backdrop-blur-md">
                     <div>
-                      <p className="text-xs font-bold text-slate-900">Aswanth &amp; Geethanjali</p>
-                      <p className="text-[10px] text-[#7C1425] font-semibold">Nov 11, 2026 • Royal</p>
+                      <p className="text-xs font-bold text-slate-900">{activeFlagship.couple}</p>
+                      <p className="text-[10px] text-[#7C1425] font-semibold">{activeFlagship.badge}</p>
                     </div>
-                    <span className="rounded-lg px-3 py-1.5 text-[11px] font-bold text-white shadow" style={{ background: "linear-gradient(135deg, #7C1425, #9B1D36)" }}>
+                    <span className="rounded-lg px-3 py-1.5 text-[11px] font-bold text-white shadow" style={{ background: activeFlagship.accentGrad }}>
                       Open
                     </span>
                   </div>
@@ -448,10 +578,10 @@ export function LandingHomeMarketing() {
 
                 {/* Bottom floating badge */}
                 <div
-                  className="absolute -bottom-2 -right-2 z-20 rounded-xl border border-amber-500/30 bg-[#250810]/85 px-4 py-2.5 backdrop-blur-md sm:-right-6 shadow-lg"
+                  className="absolute -bottom-2 -right-2 z-20 rounded-xl border border-amber-500/30 bg-[#250810]/90 px-4 py-2.5 backdrop-blur-md sm:-right-6 shadow-lg"
                   style={{ animation: "floatY 4.5s ease-in-out 0.8s infinite" }}
                 >
-                  <p className="text-[11px] font-semibold text-amber-200">✨ 3D Wax Seal &amp; Royal Chariot</p>
+                  <p className="text-[11px] font-semibold text-amber-200">{activeFlagship.pillTag}</p>
                 </div>
               </div>
             </div>
@@ -465,44 +595,93 @@ export function LandingHomeMarketing() {
           `}</style>
           </section>
 
-          {/* ── FEATURED SPOTLIGHT: ASHWAGEETHAM ── */}
+          {/* ── FEATURED SPOTLIGHT: FLAGSHIP TRIO SHOWCASE ── */}
           <section className="relative py-14 sm:py-20 bg-gradient-to-b from-[#070215] via-[#1c0612] to-[#0d0020] border-y border-amber-500/20 overflow-hidden">
             {/* Ambient gold glow */}
             <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[450px] w-[600px] rounded-full opacity-15" style={{ background: "radial-gradient(circle, #D4AF37 0%, transparent 70%)", filter: "blur(90px)" }} />
 
             <div className="relative z-10 mx-auto max-w-6xl px-6 sm:px-8">
-              <div className="rounded-3xl border border-amber-500/35 bg-[#250810]/85 backdrop-blur-xl p-6 sm:p-10 lg:p-12 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+              {/* Trio Tab Switcher Header */}
+              <div className="flex flex-col items-center text-center mb-10">
+                <div className="inline-flex items-center gap-2 rounded-full border border-amber-400/40 bg-amber-500/15 px-4 py-1.5 mb-3 shadow-sm">
+                  <span className="text-amber-300 text-xs font-bold tracking-widest uppercase">⭐ Flagship Wedding Showcase</span>
+                </div>
+                <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-3">
+                  Explore The Big Three
+                </h2>
+                <p className="text-purple-200/70 text-sm sm:text-base max-w-xl">
+                  Choose a flagship live invitation below to experience full interactive envelopes, custom soundscapes, and digital features.
+                </p>
+
+                {/* 3 Showcase Tabs */}
+                <div className="flex flex-wrap justify-center gap-2.5 sm:gap-4 mt-6 p-1.5 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md">
+                  {FLAGSHIP_TRIO.map((f, idx) => {
+                    const isSelected = activeFlagshipIndex === idx;
+                    return (
+                      <button
+                        key={f.id}
+                        type="button"
+                        onClick={() => setActiveFlagshipIndex(idx)}
+                        className={`cursor-pointer px-4 sm:px-6 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all flex items-center gap-2 ${
+                          isSelected
+                            ? "bg-amber-400/25 text-amber-200 border border-amber-400/60 shadow-lg scale-102"
+                            : "text-purple-200/70 hover:text-white hover:bg-white/5"
+                        }`}
+                      >
+                        <span className="text-base">{idx === 0 ? "🪔" : idx === 1 ? "🌸" : "🏛️"}</span>
+                        <span>{f.couple}</span>
+                        <span className="hidden sm:inline text-[10px] opacity-60">({f.title})</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Active Flagship Spotlight Card */}
+              <div className={`rounded-3xl border ${activeFlagship.borderClass} ${activeFlagship.bgClass} backdrop-blur-xl p-6 sm:p-10 lg:p-12 shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 transition-all duration-500`}>
                 {/* Left Text Column */}
                 <div className="flex-1 text-center lg:text-left">
-                  <div className="inline-flex items-center gap-2 rounded-full border border-amber-400/40 bg-amber-500/15 px-4 py-1 mb-4 shadow-sm">
-                    <span className="text-amber-300 text-xs font-semibold tracking-widest uppercase">⭐ Featured Live Design</span>
+                  <div className={`inline-flex items-center gap-2 rounded-full border px-4 py-1 mb-4 shadow-sm ${activeFlagship.badgeBg}`}>
+                    <span className="text-xs font-semibold tracking-widest uppercase">{activeFlagship.badge}</span>
                   </div>
 
-                  <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#FAF6EE] mb-2 tracking-tight">
-                    Ashwageetham
-                  </h2>
-                  <p className="text-amber-300/80 font-['Cinzel'] tracking-widest text-xs uppercase mb-4 font-semibold">
-                    Aswanth &amp; Geethanjali • November 11, 2026
+                  <h3 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#FAF6EE] mb-2 tracking-tight">
+                    {activeFlagship.title}
+                  </h3>
+                  <p className="text-amber-300/80 font-['Cinzel'] tracking-widest text-xs uppercase mb-2 font-semibold">
+                    {activeFlagship.couple} • {activeFlagship.date}
+                  </p>
+                  <p className="text-purple-200/60 text-xs mb-4">
+                    📍 {activeFlagship.venue}
                   </p>
 
                   <p className="text-purple-100/80 text-sm sm:text-base mb-6 leading-relaxed max-w-xl">
-                    Experience our flagship Kerala Royal wedding invitation suite. Features an interactive 3D wax seal envelope opening, traditional chariot &amp; elephant royal procession artwork, pencil sketch portrait, auspicious nadaswaram BGM, and instant WhatsApp RSVP.
+                    {activeFlagship.desc}
                   </p>
+
+                  {/* Feature chips */}
+                  <div className="flex flex-wrap gap-2 mb-8 justify-center lg:justify-start">
+                    {activeFlagship.features.map((feat) => (
+                      <span key={feat} className="text-xs px-3 py-1 rounded-full bg-white/10 text-white/90 border border-white/15">
+                        ✓ {feat}
+                      </span>
+                    ))}
+                  </div>
 
                   <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3.5">
                     <Link
-                      href={ashwageethamPath}
-                      className="inline-flex items-center justify-center gap-2 rounded-xl px-7 py-3.5 text-sm font-semibold text-white shadow-xl transition-all hover:scale-105"
-                      style={{ background: "linear-gradient(135deg, #7C1425, #A51D36)", boxShadow: "0 6px 24px rgba(124,20,37,0.5)" }}
+                      href={activeFlagship.path}
+                      className="inline-flex items-center justify-center gap-2 rounded-xl px-7 py-3.5 text-sm font-semibold text-white shadow-xl transition-all hover:scale-105 cursor-pointer"
+                      style={{ background: activeFlagship.accentGrad, boxShadow: activeFlagship.btnShadow }}
                     >
-                      <span className="material-symbols-outlined text-[18px]">mail</span>
-                      Open 3D Invitation
+                      <span className="material-symbols-outlined text-[18px]">open_in_new</span>
+                      Launch Live Website
                     </Link>
                     <a
-                      href="https://wa.me/918848772371?text=Hi!%20I%20love%20the%20Ashwageetham%20wedding%20invitation%20design.%20I%20would%20like%20to%20create%20one%20for%20my%20wedding."
+                      href={`https://wa.me/918848772371?text=${encodeURIComponent(activeFlagship.orderText)}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center gap-2 rounded-xl border border-amber-400/40 bg-amber-500/10 px-6 py-3.5 text-sm font-semibold text-amber-200 backdrop-blur-sm transition hover:bg-amber-500/20"
+                      className="inline-flex items-center justify-center gap-2 rounded-xl border border-amber-400/40 bg-amber-500/10 px-6 py-3.5 text-sm font-semibold text-amber-200 backdrop-blur-sm transition hover:bg-amber-500/20 cursor-pointer"
                     >
                       <i className="fab fa-whatsapp text-emerald-400 text-base"></i>
                       Order This Design
@@ -512,22 +691,22 @@ export function LandingHomeMarketing() {
 
                 {/* Right Visual Card Preview */}
                 <Link
-                  href={ashwageethamPath}
-                  className="relative w-full max-w-[360px] aspect-[4/3] sm:aspect-[16/11] rounded-2xl overflow-hidden border-2 border-amber-500/40 shadow-2xl group cursor-pointer block"
+                  href={activeFlagship.path}
+                  className="relative w-full max-w-[380px] aspect-[4/3] sm:aspect-[16/11] rounded-2xl overflow-hidden border-2 border-amber-500/40 shadow-2xl group cursor-pointer block"
                 >
                   <Image
-                    src="/ashwageetham/theme_card.jpg"
-                    alt="Ashwageetham Wedding Invitation Preview"
+                    src={activeFlagship.image}
+                    alt={`${activeFlagship.couple} Wedding Invitation Preview`}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
-                    sizes="(max-width: 768px) 100vw, 360px"
+                    sizes="(max-width: 768px) 100vw, 380px"
                     unoptimized
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent flex flex-col justify-end p-5">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent flex flex-col justify-end p-5">
                     <span className="text-[10px] font-bold text-amber-300 uppercase tracking-widest">
                       Live Digital Invite
                     </span>
-                    <p className="text-white text-lg font-bold">Aswanth &amp; Geethanjali</p>
+                    <p className="text-white text-lg font-bold">{activeFlagship.couple}</p>
                     <span className="text-amber-200/90 text-xs flex items-center gap-1 mt-0.5 group-hover:translate-x-1 transition-transform font-medium">
                       Click to experience <span className="material-symbols-outlined text-sm">arrow_forward</span>
                     </span>

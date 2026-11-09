@@ -13,6 +13,24 @@ export default function DemoPage() {
       tagColor: "bg-amber-500/20 text-amber-200 border border-amber-500/30"
     },
     {
+      title: "Prudhvi & Mouktika Destination",
+      couple: "Prudhvi Sai & Mouktika",
+      slug: "prudhviwedsmoutika",
+      desc: "Romantic sage & cream Telugu destination suite: interactive wax envelope, gold scratch-to-reveal card, couple favourites, multi-day schedule, and live map directions.",
+      image: "/assets/wedding-hero-BBfn2Y6k.jpg",
+      bgClass: "border-rose-500/30 bg-[#200914]/95",
+      tagColor: "bg-rose-500/20 text-rose-200 border border-rose-500/30"
+    },
+    {
+      title: "Temple Gopuram Heritage (Weds-D1)",
+      couple: "Yaswanth & Mrudula",
+      slug: "weds-d1",
+      desc: "Auspicious temple architecture with 3D split-door Gopuram reveal, golden confetti, parchment paper-cut styling, multi-event RSVP, and calendar sync.",
+      image: "/images/couple_festive_home.jpg",
+      bgClass: "border-amber-600/30 bg-[#240609]/95",
+      tagColor: "bg-amber-500/20 text-amber-300 border border-amber-500/30"
+    },
+    {
       title: "Kerala Traditional",
       couple: "Anandhu & Archana",
       slug: "anandhu-archana-kerala-wedding",

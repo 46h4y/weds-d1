@@ -11,6 +11,8 @@ const AjayAparnaTheme = dynamic(() => import("./AparnaAjayThemeClone").then(m =>
 const SreejithSukanyaTheme = dynamic(() => import("./SreejithSukanyaTheme").then(m => m.SreejithSukanyaTheme), { ssr: false });
 const VishnuAthulyaTheme = dynamic(() => import("./VishnuAthulyaTheme").then(m => m.VishnuAthulyaTheme), { ssr: false });
 const AshwageethamTheme = dynamic(() => import("./aswgee").then(m => m.AswgeeTheme || m.AshwageethamTheme), { ssr: false });
+const PrudhviMouktikaTheme = dynamic(() => import("./PrudhviMouktikaTheme").then(m => m.PrudhviMouktikaTheme), { ssr: false });
+const WedsD1Theme = dynamic(() => import("./WedsD1Theme").then(m => m.WedsD1Theme || m.YaswanthMrudulaTheme), { ssr: false });
 
 export function ThemeWrapper({ invite }: { invite: InviteData }) {
   if (invite.theme === "kerala") return <KeralaTheme invite={invite} />;
@@ -21,5 +23,7 @@ export function ThemeWrapper({ invite }: { invite: InviteData }) {
   if (invite.theme === "sreejith-sukanya") return <SreejithSukanyaTheme invite={invite} />;
   if (invite.theme === "vishnu-athulya") return <VishnuAthulyaTheme invite={invite} />;
   if (invite.theme === "ashwageetham") return <AshwageethamTheme invite={invite} />;
+  if (invite.theme === "prudhvi-mouktika" || invite.theme === "prudhvi-moutika" || invite.theme === "telugu") return <PrudhviMouktikaTheme invite={invite} />;
+  if (invite.theme === "weds-d1" || invite.theme === "yaswanth-mrudula" || invite.theme === "toran") return <WedsD1Theme invite={invite} />;
   return null;
 }
